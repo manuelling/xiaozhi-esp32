@@ -1,0 +1,73 @@
+{
+  "name": "M5Stack Core2",
+  "manufacturer": "M5Stack",
+  "chip": "ESP32",
+  "chip_variant": "ESP32-D0WDQ6-V3",
+  "description": "M5Stack Core2 with WiFi, ILI9342C 320×240 display, FT6336U touch, microphone, speaker, and AXP192 power management",
+  "gpio": {
+    "audio": {
+      "i2s_mclk": 0,
+      "i2s_ws": 25,
+      "i2s_bclk": 4,
+      "i2s_din": 34,
+      "i2s_dout": 26,
+      "codec_sda": null,
+      "codec_scl": null
+    },
+    "display": {
+      "width": 320,
+      "height": 240,
+      "controller": "ILI9342C",
+      "spi_host": 2,
+      "mosi": 23,
+      "miso": 38,
+      "sck": 18,
+      "cs": 5,
+      "dc": 15,
+      "rst": 1,
+      "backlight": 12
+    },
+    "touch": {
+      "controller": "FT6336U",
+      "i2c_addr": "0x38",
+      "sda": 21,
+      "scl": 22
+    },
+    "power": {
+      "ic": "AXP192",
+      "i2c_addr": "0x34",
+      "sda": 21,
+      "scl": 22
+    },
+    "buttons": {
+      "boot": 37
+    },
+    "uart": {
+      "tx": 1,
+      "rx": 3,
+      "baud": 115200
+    }
+  },
+  "memory": {
+    "flash": "16MB",
+    "spiram": "8MB",
+    "sram": "520KB"
+  },
+  "features": [
+    "WiFi 2.4GHz",
+    "Bluetooth (optional via AXP192)",
+    "Microphone (SPM1423)",
+    "Speaker (NS4168 + 1W)",
+    "ILI9342C Display 320×240",
+    "FT6336U Capacitive Touch",
+    "AXP192 Power Management",
+    "Battery (500mAh)",
+    "USB Type-C for charging/debug"
+  ],
+  "wifi": {
+    "ssid": "ASUS_MJ",
+    "password": "5544332211"
+  },
+  "xiaozhi_compatible": true,
+  "notes": "M5Stack Core2 with complete audio-visual interface suitable for AI voice assistant applications using xiaozhi-esp32 framework"
+}
